@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FAFAFA"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image"
+            style="@style/ImageHeader"
+            tools:src="@drawable/mountains"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TitleHolder"
+            tools:text="Title"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/IconBullet"
+            android:drawableStart="@mipmap/ic_location_on_black_24dp"
+            tools:text="Address"/>
+
+        <TextView
+            android:id="@+id/website"
+            style="@style/IconBullet"
+            android:autoLink="web"
+            android:drawableStart="@mipmap/ic_public_black_24dp"
+            tools:text="Website"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/IconBullet"
+            android:drawableStart="@mipmap/ic_phone_black_24dp"
+            tools:text="Phone"/>
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/IconBullet"
+            android:autoLink="email"
+            android:drawableStart="@mipmap/ic_email_black_24dp"
+            tools:text="Email"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/Date"
+        tools:drawableLeft="@mipmap/ic_date_range_black_24dp"
+        tools:text="Dates"/>
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/Description"
+        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt vehicula purus quis efficitur. Proin dictum at velit non aliquet. Donec pharetra leo vitae ipsum iaculis, fringilla pharetra quam euismod. "/>
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="8dp"
+        android:paddingRight="8dp"
+        android:text="Source: "/>
+
+</LinearLayout>
